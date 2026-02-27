@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:-//UT GRACS//GRACS x NVIDIA Event//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gracs-nvidia-talk-qa-david-brown-20260311@utgracs
+DTSTAMP:20260227T000000Z
+DTSTART:20260311T210000Z
+DTEND:20260311T221500Z
+SUMMARY:GRACS x NVIDIA: Talk + Q&A with David Brown
+LOCATION:GDC 6.302 (Faculty Lounge)
+DESCRIPTION:No RSVP needed - just show up.\\n\\nDavid will give a talk about his team (ASCII at NVIDIA), the work they do, what kinds of students he’s looking for, and host an open-ended Q&A. He will also touch on AI.\\n\\nAudience: Open to UTCS graduate students (MS/PhD) and faculty.\\nFood will be provided (and potentially NVIDIA merch).\\nRecruiting note: He’s especially looking for strong software people who want to work on hard problems.\\nQuestions: utgracs@gmail.com
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
