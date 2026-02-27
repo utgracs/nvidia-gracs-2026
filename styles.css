@@ -176,7 +176,7 @@ p {
 }
 
 .lead {
-  max-width: 66ch;
+  max-width: none;
   color: #e7f5e1;
 }
 
@@ -205,6 +205,56 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+
+.calendar-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--brand);
+  color: #132106;
+  border: 1px solid rgba(19, 33, 6, 0.2);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0.35rem 0.45rem 0.35rem 0.95rem;
+  box-shadow: 0 10px 24px rgba(118, 185, 0, 0.3);
+}
+
+.calendar-pill-label {
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.calendar-pill-sep {
+  padding: 0 0.2rem;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.calendar-pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  color: #132106;
+  text-decoration: none;
+}
+
+.calendar-pill-icon:hover,
+.calendar-pill-icon:focus-visible {
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.calendar-pill-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .btn {

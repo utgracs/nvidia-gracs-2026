@@ -47,7 +47,33 @@
         </ul>
         <p class="notice">No RSVP needed.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="event.ics" download>Add to Calendar</a>
+          <div class="calendar-pill" role="group" aria-label="Add to calendar options">
+            <span class="calendar-pill-label">Add to Calendar</span>
+            <span class="calendar-pill-sep" aria-hidden="true">|</span>
+            <a class="calendar-pill-icon" href="event.ics" download aria-label="Download calendar file">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v10"></path>
+                <path d="m8 10 4 4 4-4"></path>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+              </svg>
+            </a>
+            <span class="calendar-pill-sep" aria-hidden="true">|</span>
+            <a
+              class="calendar-pill-icon"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=GRACS%20x%20NVIDIA%3A%20Talk%20%2B%20Q%26A%20with%20David%20Brown&dates=20260311T210000Z%2F20260311T221500Z&details=No%20RSVP%20needed%20-%20just%20show%20up.%0A%0ADavid%20will%20give%20a%20talk%20about%20his%20team%20%28ASCII%20at%20NVIDIA%29%2C%20the%20work%20they%20do%2C%20what%20kinds%20of%20students%20he%E2%80%99s%20looking%20for%2C%20and%20host%20an%20open-ended%20Q%26A.%20He%20will%20also%20touch%20on%20AI.&location=GDC%206.302%20%28Faculty%20Lounge%29&ctz=America%2FChicago"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Add to Google Calendar"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.5" y="5.5" width="17" height="15" rx="2"></rect>
+                <path d="M3.5 9.5h17"></path>
+                <path d="M8 3.5v4"></path>
+                <path d="M16 3.5v4"></path>
+                <text x="12" y="17.2" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor" stroke="none">G</text>
+              </svg>
+            </a>
+          </div>
           <a class="btn btn-secondary" href="mailto:utgracs@gmail.com">Email Questions</a>
         </div>
       </div>
