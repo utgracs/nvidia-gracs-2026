@@ -44,14 +44,15 @@ a {
 h1,
 h2,
 h3 {
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.7rem;
   line-height: 1.2;
   font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
 }
 
 h1 {
   font-size: clamp(2rem, 4vw, 3.3rem);
-  letter-spacing: -0.02em;
+  line-height: 1.14;
+  letter-spacing: -0.025em;
 }
 
 h2 {
@@ -68,7 +69,7 @@ p {
 }
 
 .section {
-  padding: 2.5rem 0;
+  padding: clamp(2rem, 4vw, 3rem) 0;
 }
 
 .skip-link {
@@ -131,15 +132,34 @@ p {
 }
 
 .hero {
-  padding-top: 3.3rem;
+  padding-top: 2.9rem;
 }
 
 .hero-card {
-  background: linear-gradient(135deg, #101f17 0%, #1d3328 65%, #254133 100%);
+  background: linear-gradient(160deg, #2f3338 0%, #262a2f 100%);
   color: #f7fdf5;
+  border: 1px solid rgba(118, 185, 0, 0.3);
   border-radius: 30px;
-  padding: clamp(1.4rem, 3vw, 2.9rem);
-  box-shadow: var(--shadow);
+  padding: clamp(1.45rem, 3vw, 2.7rem);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hero-card h1 {
+  color: #f4f8f1;
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-card h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--brand);
 }
 
 .hero-logos {
@@ -177,46 +197,61 @@ p {
 
 .lead {
   max-width: none;
-  color: #e7f5e1;
+  color: #ffffff;
+  margin-bottom: 1.1rem;
+  line-height: 1.68;
 }
 
 .event-meta {
-  margin: 1.5rem 0 1rem;
+  margin: 1.2rem 0 0.95rem;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 
 .event-meta li {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 4px solid var(--brand);
   border-radius: 14px;
   padding: 0.65rem 0.8rem;
 }
 
-.notice {
-  margin: 1rem 0 1.35rem;
+.hero-inline-link {
+  color: #f4f8f1;
+  text-decoration-color: rgba(118, 185, 0, 0.95);
+  text-underline-offset: 3px;
   font-weight: 700;
-  color: #d8f2bb;
+}
+
+.hero-inline-link:hover,
+.hero-inline-link:focus-visible {
+  color: #ffffff;
+}
+
+.notice {
+  margin: 0.95rem 0 1.2rem;
+  font-weight: 700;
+  color: #cce89a;
 }
 
 .cta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.65rem;
 }
 
 .calendar-pill {
   display: inline-flex;
   align-items: center;
-  background: var(--brand);
-  color: #132106;
-  border: 1px solid rgba(19, 33, 6, 0.2);
+  background: #76b900;
+  color: #ffffff;
+  border: 1px solid #76b900;
   border-radius: 999px;
   min-height: 44px;
   padding: 0.35rem 0.45rem 0.35rem 0.95rem;
-  box-shadow: 0 10px 24px rgba(118, 185, 0, 0.3);
+  box-shadow: none;
 }
 
 .calendar-pill-label {
@@ -228,7 +263,7 @@ p {
 .calendar-pill-sep {
   padding: 0 0.2rem;
   font-weight: 700;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .calendar-pill-icon {
@@ -238,13 +273,24 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 999px;
-  color: #132106;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .calendar-pill-icon:hover,
 .calendar-pill-icon:focus-visible {
-  background: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-card .btn-secondary {
+  background: transparent;
+  color: #e9efe6;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.hero-card .btn-secondary:hover,
+.hero-card .btn-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .calendar-pill-icon svg {
@@ -307,8 +353,9 @@ p {
   background: var(--surface);
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  padding: 1.2rem;
-  box-shadow: var(--shadow);
+  border-left: 4px solid var(--brand);
+  padding: 1.1rem 1.15rem;
+  box-shadow: none;
 }
 
 .speaker {
@@ -320,8 +367,8 @@ p {
 
 .speaker-photo {
   border-radius: var(--radius);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(118, 185, 0, 0.32);
+  box-shadow: none;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -331,9 +378,23 @@ p {
 .speaker-copy {
   background: var(--surface);
   border: 1px solid var(--line);
+  border-left: 4px solid var(--brand);
   border-radius: var(--radius);
-  padding: 1.35rem;
-  box-shadow: var(--shadow);
+  padding: 1.25rem 1.3rem;
+  box-shadow: none;
+}
+
+.speaker-copy h2 {
+  margin-bottom: 0.3rem;
+}
+
+.speaker-copy p {
+  margin-bottom: 0.9rem;
+}
+
+.speaker-copy p:first-of-type {
+  color: #3f5646;
+  font-weight: 700;
 }
 
 .text-link {
@@ -352,27 +413,30 @@ p {
   background: var(--surface);
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  padding: 1.2rem;
-  box-shadow: var(--shadow);
+  border-left: 4px solid var(--brand);
+  padding: 1.05rem 1.15rem;
+  box-shadow: none;
 }
 
 .faq-list {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.6rem;
 }
 
 .faq-list details {
   background: var(--surface);
   border: 1px solid var(--line);
+  border-left: 4px solid var(--brand);
   border-radius: 14px;
-  padding: 0.85rem 0.95rem;
-  box-shadow: var(--shadow);
+  padding: 0.9rem 1rem;
+  box-shadow: none;
 }
 
 .faq-list summary {
   font-weight: 700;
   cursor: pointer;
   list-style: none;
+  line-height: 1.35;
 }
 
 .faq-list summary::-webkit-details-marker {
@@ -392,7 +456,7 @@ p {
 }
 
 .faq-list p {
-  margin: 0.7rem 0 0;
+  margin: 0.6rem 0 0;
 }
 
 .small {
@@ -410,7 +474,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -448,6 +512,81 @@ p {
 
   .hero-logos {
     flex-wrap: wrap;
+  }
+
+  .section {
+    padding: 1.85rem 0;
+  }
+
+  .hero {
+    padding-top: 2.1rem;
+  }
+
+  .hero-card {
+    border-radius: 24px;
+    padding: 1.2rem 1rem 1.35rem;
+  }
+
+  .hero-card h1 {
+    font-size: clamp(1.72rem, 8.2vw, 2.28rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-card h1::after {
+    width: 58px;
+    height: 3px;
+  }
+
+  .lead {
+    margin-bottom: 0.95rem;
+    line-height: 1.58;
+  }
+
+  .event-meta {
+    margin: 1rem 0 0.85rem;
+    gap: 0.45rem;
+  }
+
+  .event-meta li {
+    padding: 0.58rem 0.72rem;
+  }
+
+  .notice {
+    margin: 0.82rem 0 1rem;
+  }
+
+  .cta-row {
+    gap: 0.55rem;
+  }
+
+  .calendar-pill {
+    padding: 0.32rem 0.42rem 0.32rem 0.82rem;
+  }
+
+  .calendar-pill-label {
+    font-size: 0.95rem;
+  }
+
+  .calendar-pill-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .calendar-pill-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .speaker {
+    gap: 1rem;
+  }
+
+  .speaker-copy {
+    padding: 1rem;
+  }
+
+  .faq-list details {
+    padding: 0.8rem 0.85rem;
   }
 
   .footer-wrap {
