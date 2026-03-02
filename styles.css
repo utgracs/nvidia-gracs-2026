@@ -408,15 +408,15 @@ p {
 .speaker-links {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.45rem;
 }
 
 .speaker-icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   border: 1px solid rgba(118, 185, 0, 0.45);
   color: #76b900;
@@ -429,8 +429,8 @@ p {
 }
 
 .speaker-icon-link svg {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   display: block;
   fill: currentColor;
   stroke: none;
