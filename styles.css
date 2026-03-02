@@ -408,27 +408,29 @@ p {
 .speaker-links {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .speaker-icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
   text-decoration: none;
 }
 
 .speaker-icon-link:hover,
 .speaker-icon-link:focus-visible {
-  background: rgba(118, 185, 0, 0.12);
+  background: transparent;
 }
 
 .speaker-icon-link img {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   display: block;
   object-fit: contain;
 }
