@@ -320,6 +320,17 @@ p {
   color: #cce89a;
 }
 
+.incentive-note {
+  margin: -0.45rem 0 1rem;
+  padding: 0.62rem 0.78rem;
+  border-radius: 12px;
+  background: rgba(118, 185, 0, 0.16);
+  border: 1px solid rgba(118, 185, 0, 0.45);
+  border-left: 4px solid #76b900;
+  color: #eff8e8;
+  font-weight: 600;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
