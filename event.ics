@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:gracs-nvidia-talk-qa-david-brown-20260311@utgracs
 DTSTAMP:20260227T000000Z
-DTSTART:20260311T210000Z
-DTEND:20260311T221500Z
+DTSTART:20260325T210000Z
+DTEND:20260325T221500Z
 SUMMARY:GRACS x NVIDIA: Talk + Q&A with David Brown
 LOCATION:GDC 6.302 (Faculty Lounge)
 DESCRIPTION:David will give a talk about his team (ASCII at NVIDIA), the work they do, and what kinds of students NVIDIA is looking for across teams, then host an open-ended Q&A. He will also cover how AI is being incorporated across NVIDIA and how software engineers work on hardware problems.\\n\\nView more info here -> https://utgracs.github.io/nvidia-gracs-2026/

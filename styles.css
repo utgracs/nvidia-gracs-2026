@@ -72,6 +72,10 @@ p {
   padding: clamp(2rem, 4vw, 3rem) 0;
 }
 
+.section-tight {
+  padding: 1rem 0 0;
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
@@ -132,7 +136,65 @@ p {
 }
 
 .hero {
-  padding-top: 2.9rem;
+  padding-top: 1.6rem;
+}
+
+.reschedule-banner {
+  width: 100%;
+  background: linear-gradient(140deg, #76b900 0%, #6da900 100%);
+  color: #040303;
+  border: 1px solid #5f9106;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.reschedule-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.reschedule-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reschedule-time {
+  color: #010101;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(4, 3, 3, 0.95);
+  text-underline-offset: 3px;
+  font-weight: 800;
+}
+
+.reschedule-time:hover,
+.reschedule-time:focus-visible {
+  color: #030303;
+  text-decoration-thickness: 2px;
+}
+
+.reschedule-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.reschedule-link:hover,
+.reschedule-link:focus-visible {
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 .hero-card {
