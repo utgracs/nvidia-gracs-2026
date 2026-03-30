@@ -171,20 +171,6 @@ p {
   stroke-linejoin: round;
 }
 
-.reschedule-time {
-  color: #010101;
-  text-decoration-line: underline;
-  text-decoration-color: rgba(4, 3, 3, 0.95);
-  text-underline-offset: 3px;
-  font-weight: 800;
-}
-
-.reschedule-time:hover,
-.reschedule-time:focus-visible {
-  color: #030303;
-  text-decoration-thickness: 2px;
-}
-
 .reschedule-link {
   color: #000000;
   text-decoration: none;
